@@ -1,0 +1,235 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700&subset=latin,latin-ext);
+
+body {
+    font-family: "Titillium Web", sans-serif;
+}
+
+.twentytwenty-wrapper .thirdimg {
+    display: block;
+    position: relative;
+    z-index: 99999;
+    transition: .3s opacity;
+}
+
+.twentytwenty-overlay {
+    display: none !important;
+}
+
+.logo-container {
+    padding-top: 10px;
+    text-transform: uppercase;
+    z-index: 999;
+    font-size: 21px;
+    background-color: #f8f8f8;
+}
+
+.logo-container .row {
+    background-color: #f8f8f8;
+    padding-bottom: 10px;
+}
+
+.logo a {
+    font-weight: 700;
+    color: #000 !important;
+}
+
+.socials {
+    font-weight: 700;
+    line-height: 32px;
+    height: 32px;
+}
+
+.socials > * {
+    vertical-align: top;
+}
+
+.socials .icon {
+    display: inline-block;
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    font-style: normal;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid #000;
+    transition: all .25s;
+}
+
+.socials .icon:hover {
+    border-color: #fff;
+    background-color: #000;
+    box-shadow: 0 0 0 2px #000;
+}
+
+.socials .icon svg {
+    width: 16px;
+    height: 16px;
+    margin: 6px;
+}
+
+.socials .icon svg #icon {
+    transition: all .25s;
+    fill: #000;
+}
+
+.socials .icon:hover svg #icon {
+    fill: #fff;
+}
+
+.socials .icon-share {
+    display: none;
+}
+
+.share-button {
+    display: block;
+    border: 0;
+    margin-top: 5px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.share-button.icon-facebook {
+    background-color: #3b5998;
+}
+
+.share-button.icon-twitter {
+    background-color: #00aced;
+}
+
+.share-button.icon-mail {
+    background-color: #dd4b39;
+}
+
+@media only screen and (max-width : 480px) {
+    .socials .icon,
+    .socials span {
+        display: none;
+    }
+
+    .socials .icon-share {
+        display: inline-block;
+    }
+}
+
+header {
+    margin-top: 30px;
+}
+
+header h1 {
+    max-width: 700px;
+    margin: 0 auto;
+    float: none !important;
+}
+
+header h1 .naslov {
+    font-weight: 700;
+    font-size: 72px;
+    background: url("../img/logo_1.jpg") no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 0px;
+    padding-top: 27%;
+    text-indent: -99999px;
+}
+
+header h3 {
+    margin-top: 20px;
+    padding-top: 0;
+    margin-bottom: 50px;
+    clear: both;
+    color: #dd786b;
+}
+
+@media only screen and (max-width : 480px) {
+    header h1 {
+        font-size: 45px;
+    }
+}
+
+.opisprojekta {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+
+@media only screen and (min-width : 1199px) and (max-width : 1337px) {
+    .opisprojekta,
+    .loaded-img-slider {
+        width: 83.33333%;
+        margin-left: 8.33333%;
+    }
+}
+
+.more-link,
+.more-link:hover {
+    font-size: 18px;
+    color: #dd786b;
+    display: inline-block;
+}
+
+@-webkit-keyframes spinner {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+@keyframes spinner {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+.spinner {
+    width: 75px;
+    height: 75px;
+    border: 16px solid #000;
+    border-right-color: transparent;
+    border-radius: 50% !important;
+    -webkit-animation: spinner 1s infinite linear;
+    animation: spinner 1s infinite linear;
+    margin: 20px auto;
+    clear: both;
+}
+
+@-webkit-keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fade-in {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+.loaded-img-slider {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    -webkit-animation: fade-in .5s;
+    animation: fade-in .5s;
+}
+.loaded-img-slider .twentytwenty-wrapper {
+    border: 4px solid rgba(0,0,0,.1);
+    cursor: e-resize;
+}
+
+.slider {
+    clear: both;
+}
+
+.premaknitekst {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 100px;
+}
+
+.ulica {
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.ulica a,
+.ulica a:hover {
+    color: #dd786b;
+}
+
+.opiscontainer {
+    padding-bottom: 50px;
+}
