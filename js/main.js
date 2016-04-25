@@ -6,11 +6,11 @@ $(function() {
         html = document.documentElement;
         r = el.getBoundingClientRect();
 
-        return ( !!r 
-          && r.bottom >= 0 
-          && r.right >= 0 
-          && r.top <= html.clientHeight 
-          && r.left <= html.clientWidth 
+        return ( !!r
+          && r.bottom >= 0
+          && r.right >= 0
+          && r.top <= html.clientHeight
+          && r.left <= html.clientWidth
         );
     }
 
@@ -49,7 +49,7 @@ $(function() {
             var container = $('<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 loaded-img-slider"></div>');
             var twenty = $('<div class="twentytwenty-container"></div>');
             twenty.html('<img src="' + $this.data("left") + '"><img src="' + $this.data("hover") + '" class="thirdimg"><img src="' + $this.data("right") + '"></div></div>');
-            
+
             if ($this.data("title")) {
                 container.append('<div class="ulica">' + $this.data("title") + ' <a href="#top" class="pull-right">Na vrh</a></div>');
             }
@@ -80,7 +80,7 @@ $(function() {
         !1
     }),
     $(".icon-twitter").css("cursor", "pointer").on("click", function() {
-        var a = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text + " " + document.location.href);
+        var a = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(text + " #prostovid #danesjenovdan " + document.location.href);
         return window.open(a, "_blank"),
         !1
     }),
