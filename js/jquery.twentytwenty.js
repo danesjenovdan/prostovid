@@ -111,6 +111,7 @@
           offsetY = container.offset().top;
           imgWidth = beforeImg.width();
           imgHeight = beforeImg.height();
+          container.parent().parent().find(".danesjutri").text("JUTRI");
         }
       });
 
@@ -118,6 +119,7 @@
         if (touchTarget) {
           container.removeClass("active");
           touchTarget.css("opacity", 1);
+          container.parent().parent().find(".danesjutri").text("DANES");
         }
       });
 
@@ -150,12 +152,14 @@
         imgHeight = beforeImg.height();
         var $thimg = $(this).find(".thirdimg");
         if ($thimg) $thimg.css("opacity", 0);
+        container.parent().parent().find(".danesjutri").text("JUTRI");
       });
 
       container.on("mouseleave", function(e) {
         container.removeClass("active");
         var $thimg = $(this).find(".thirdimg");
         if ($thimg) $thimg.css("opacity", 1);
+        container.parent().parent().find(".danesjutri").text("DANES");
       });
 
       // end hover to activate handling

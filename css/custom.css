@@ -225,8 +225,8 @@ header h3 {
     margin-bottom: 5px;
 }
 
-.ulica a,
-.ulica a:hover {
+a,
+a:hover {
     color: #dd786b;
 }
 
@@ -239,3 +239,4 @@ header h3 {
     padding-top: 20px;
     background-color: #f8f8f8;
 }
+

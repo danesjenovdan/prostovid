@@ -51,7 +51,7 @@ $(function() {
             twenty.html('<img src="' + $this.data("left") + '"><img src="' + $this.data("hover") + '" class="thirdimg"><img src="' + $this.data("right") + '"></div></div>');
 
             if ($this.data("title")) {
-                container.append('<div class="ulica">' + $this.data("title") + ' <a href="#top" class="pull-right">Na vrh</a></div>');
+                container.append('<div class="ulica">' + $this.data("title") + ' <span class="pull-right danesjutri">DANES</span></div>');
             }
 
             container.append(twenty);
