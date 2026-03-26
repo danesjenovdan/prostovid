@@ -8,4 +8,4 @@ resources:
 images:
   - name: prostovid
     newName: rg.fr-par.scw.cloud/djnd/prostovid
-    newTag: '71a48febbd3da781444b63c93c797c5db594f046'
+    newTag: '71459f5f6a667c9140db29b9f4aabc2522d12939'
